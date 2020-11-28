@@ -1,3 +1,5 @@
+# Sort list of addresses in place. 
+
 ### Exercise 1 & 2 ###
 addresses = ['221 B Baker St.', '42 Wallaby Way', '12 Grimmauld Place', '742 Evergreen Terrace', '1600 Pennsylvania Ave', '10 Downing St.']
 
@@ -18,3 +20,34 @@ print(sorted_cities)
 print(cities) 
 cities.sort(reverse = True) 
 print(cities) 
+
+
+# Sort list of furniture in place. 
+
+inventory = ['twin bed', 'twin bed', 'headboard', 'queen bed', 'king bed', 'dresser', 'dresser', 'table', 'table', 'nightstand', 'nightstand', 'king bed', 'king bed', 'twin bed', 'twin bed', 'sheets', 'sheets', 'pillow', 'pillow']
+
+inventory_len = len(inventory) 
+
+first = inventory[0] 
+print("First element ", first) 
+
+last = inventory[-1] 
+print("Last element ", last) 
+
+inventory_2_6 = inventory[2:6]
+print("Elements indexed from 2 to 5", inventory_2_6) 
+
+first_3 = inventory[:3]
+print("First 3 elements: ", first_3) 
+
+twin_beds = inventory.count('twin bed') 
+print("Number of twin beds: ", twin_beds) 
+
+king_bed = inventory.count('king bed') 
+print("Number of king beds: ", king_bed) 
+print() 
+inventory.sort() 
+print("Alphabetical order from A to Z: ", inventory) 
+print() 
+inventory.sort(reverse = True) 
+print("List sorted in-place in reverse order: ", inventory) 
